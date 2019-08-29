@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+   *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background: green;
+    }
+
+    #wrapper{
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        bottom: 50px;
+        overflow: hidden;
+    }
+    ul{
+        list-style: none;
+        background: white;
+    }
+    ul li{
+        line-height: 50px;
+        text-indent: 40px;
+        font-size: 40px;
+    }
+
+    header{
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: blue;
+    }
+    footer{
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: yellow;
+    }
+    /*设置  span*/
+    span{
+        width: 100%;
+        height: 50px;
+        /*仅仅是 字体的 地方*/
+        background: transparent;
+        font-size: 100px;
+        text-align: center;
+        color: red;
+    }
+    span:first-child{
+        position: absolute;
+        top: -100px;
+    }
+    span:last-child{
+        position: absolute;
+        bottom: -100px;
+    }
+    </style>
+</head>
+<body>
+    <header></header>
+    <div id = "wrapper">
+        <div>
+            <span>下拉刷新</span>
+            <ul>
+                <li>数据</li>
+                <li>数据</li>
+            </ul>
+            <span>上拉加载</span>
+        </div>
+    </div>
+    <footer></footer>
+    <script></script>
+</body>
+</html>
